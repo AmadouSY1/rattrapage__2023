@@ -1,0 +1,49 @@
+<div class="container" >
+  <div class="card mt-2">
+      <div class="card-header bg">
+          <h5 bg-light>Liste des Inscrits</h5>
+      </div>
+      <div class="card-body">
+          <div class="float-end" >
+              <a routerLink="/classes/add-classes" class="btn btn-outline-info"> Nouveau</a>
+          </div>
+          <br>
+          <form class="d-flex my-2 w-50">
+            <label  class="form-label">Classe</label>
+            <input class="form-control me-1" name="" type="search" placeholder="" aria-label="Search">
+            <label  class="form-label">Date</label>
+            <input class="form-control me-1" name="" type="date" placeholder="" aria-label="Date">
+            <button class="btn btn-outline-success" type="submit">Rechercher</button>
+          </form>
+      </div>
+
+  </div>
+  <table class="table table-bordered">
+      <thead>
+      <tr >
+          <th>ID</th>
+          <th>Date</th>
+          <th>Matricule</th>
+          <th>Nom complet</th>
+          <th>Classe</th>
+          <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+              <tr *ngFor="let inscription of inscriptions" >
+                  <td > {{inscription.id}} </td>
+                  <td > {{inscription.date}} </td>
+                  <td > {{inscription.etudiant.matricule}} </td>
+                  <td > {{inscription.etudiant.nomComplet}} </td>
+                  <td > {{inscription.classe.libelle}} </td>
+
+                  <td><a   class="btn btn-outline-warning">Modifier</a>
+                      <a     class="btn btn-outline-danger">Supprimer</a></td>
+
+              </tr>
+        </tbody>
+      </table>
+
+      </div>
+
+

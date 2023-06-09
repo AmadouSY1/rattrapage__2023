@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="sidebar">
+      <h2>Gestion scolaire</h2>
+      <ul>
+          <li><a routerLink="/classes/classe"><i class="fas fa-home"></i>Classe</a></li>
+          <li><a routerLink="/etudiants/list"><i class="fas fa-user"></i>Etudiant</a></li>
+          <li><a routerLink="/inscriptions/liste" ><i class="fas fa-address-book"></i>Inscription</a></li>
+
+      </ul>
+      <div class="social_media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="main_content">
+      <div class="header "><button class="float-end ">Deconnexion</button></div>
+      <div class="info">
+          <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+

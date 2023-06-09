@@ -1,0 +1,81 @@
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 12;
+  padding: 17;
+
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family:  sans-serif;
+}
+
+body{
+   background-color: #ffffff;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #eb8704;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 20px;
+  border-bottom: 2px solid #502f10;
+  border-bottom: 2px solid rgba(0,0,0,0.05);
+  border-top: 2px solid rgba(255,255,255,0.05);
+}
+
+.wrapper .sidebar ul li a{
+  color: #bdb8d7;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 35px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #493013;
+}
+
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+
+
+
+
+.wrapper .main_content{
+
+  width: 300%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 40px;
+  background: #361e02;
+  color: #ffffff;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+
+
+
